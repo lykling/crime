@@ -1,0 +1,33 @@
+{
+  "name": "crime",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-uglify": "~0.6.0"
+  },
+  "main": "crime.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.6.0"
+  },
+  "scripts": {
+    "test": "jasmine-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lykling/crime.git"
+  },
+  "keywords": [
+    "view"
+  ],
+  "author": {
+    "name": "Pride Leong",
+    "email": "lykling.lyk@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lykling/crime/issues"
+  },
+  "homepage": "https://github.com/lykling/crime"
+}
