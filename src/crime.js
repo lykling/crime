@@ -31,6 +31,6 @@ require.config({
     ]
 });
 
-require(['shell'], function (presentation) {
+require(['fc-component-ria'], function (presentation) {
     window.console.log(presentation);
 });
