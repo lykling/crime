@@ -26,10 +26,16 @@
     "underscore": "~1.7.0",
     "reveal.js": "~2.6.2",
     "requirejs": "~2.1.15",
-    "requirejs-text": "~2.0.12"
+    "requirejs-text": "~2.0.12",
+    "eoo": "~0.1.4"
   },
   "devDependencies": {
     "marked": "~0.3.2",
     "highlightjs": "~8.4.0"
+  },
+  "exportsOverride": {
+      "eoo": {
+          "": "src/*.js"
+      }
   }
 }

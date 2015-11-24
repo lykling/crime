@@ -1,3 +1,10 @@
+/**
+ * Copyright (C) 2015 All rights reserved.
+ *
+ * @file crime.js
+ * @author Pride Leong<lykling.lyk@gmail.com>
+ */
+
 require.config({
     baseUrl: 'src',
     paths: {
@@ -14,9 +21,16 @@ require.config({
         reveal: {
             exports: 'Reveal'
         }
-    } 
+    },
+    packages: [
+        {
+            name: 'eoo',
+            location: '../lib/eoo',
+            main: 'main'
+        }
+    ]
 });
 
-require(['manage'], function (manage) {
-    console.log(manage);
+require(['shell'], function (presentation) {
+    window.console.log(presentation);
 });

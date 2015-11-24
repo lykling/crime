@@ -8,19 +8,21 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="lib/reveal.js/css/reveal.min.css" />
-        <link rel="stylesheet" href="lib/reveal.js/css/theme/moon.css" id="theme" />
+        <link rel="stylesheet" href="lib/reveal.js/css/reveal.css" />
+        <link rel="stylesheet" href="lib/reveal.js/css/theme/sky.css" id="theme" />
         <link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css"/>
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-            var cssPath = 'lib/reveal.js/css/print/';
-			link.href = cssPath + (window.location.search.match( /print-pdf/gi ) ? 'pdf.css' : 'paper.css');
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-        <link rel="stylesheet" href="lib/reveal.js/css/print/pdf.css" media="print" />
-        <link rel="stylesheet" type="text/css" href="lib/highlightjs/default.css"/>
+        <script>
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            var paperCss = 'lib/reveal.js/css/print/paper.css';
+            var pdfCss = 'lib/reveal.js/css/print/pdf.css';
+            link.href = window.location.search.match(/print-pdf/gi) ? pdfCss : '';
+            document.getElementsByTagName('head')[0].appendChild( link );
+            // document.write('<link rel=""stylesheet" type="text/css" href="' + cssPath + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css"/>');
+        </script>
+        <!-- <link rel="stylesheet" href="lib/reveal.js/css/print/pdf.css" media="print" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="lib/highlightjs/default.css"/> -->
         <script src="lib/requirejs/require.js" data-main="/src/crime.js"></script>
     </head>
     <body>

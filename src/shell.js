@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2015 All rights reserved.
  *
- * @file manage.js
+ * @file shell.js
  * @author Pride Leong<lykling.lyk@gmail.com>
  */
 
@@ -13,7 +13,7 @@ define(function (require, exports, module) {
     var overrides = {};
 
     overrides.init = function () {
-        var tpl = require('text!manage/tpl/container.html');
+        var tpl = require('text!shell/tpl/container.html');
         $('body').innerHTML = tpl;
     };
 
