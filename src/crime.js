@@ -31,6 +31,6 @@ require.config({
     ]
 });
 
-require(['fc-component-ria'], function (presentation) {
+require(['git'], function (presentation) {
     window.console.log(presentation);
 });
